@@ -1,0 +1,104 @@
+/* Import custom fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Oswald:wght@400;700&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+body {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('/1.jpg') no-repeat center center fixed;
+    /* Replace 'images/team-v-bg.jpg' with the path to your image */
+    background-size: cover;
+    height: 100vh;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.welcome-text h1 {
+    font-size: 4rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffeb3b;
+    letter-spacing: 2px;
+}
+
+.welcome-text h1 span {
+    color: #f44336;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.welcome-text p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 10px;
+    color: #d1d1d1;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.action-buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background: #f44336;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin: 0 10px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.btn:hover {
+    background: #ff5722;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn-alt {
+    background: transparent;
+    border: 2px solid #ffeb3b;
+    color: #ffeb3b;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.btn-alt:hover {
+    background: #ffeb3b;
+    color: black;
+    box-shadow: 0 8px 15px rgba(255, 235, 59, 0.3);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .welcome-text h1 {
+        font-size: 3rem;
+    }
+
+    .welcome-text p {
+        font-size: 1rem;
+    }
+
+    .btn, .btn-alt {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
